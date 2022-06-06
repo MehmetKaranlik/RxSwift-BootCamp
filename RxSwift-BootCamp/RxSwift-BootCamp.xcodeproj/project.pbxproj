@@ -13,6 +13,7 @@
 		465CDFFE284EB668003185F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465CDFFC284EB668003185F8 /* Main.storyboard */; };
 		465CE000284EB669003185F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465CDFFF284EB669003185F8 /* Assets.xcassets */; };
 		465CE003284EB669003185F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465CE001284EB669003185F8 /* LaunchScreen.storyboard */; };
+		465CE011284EB81B003185F8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 465CE010284EB81B003185F8 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		465CDFFF284EB669003185F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		465CE002284EB669003185F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		465CE004284EB669003185F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465CE012284EB8D3003185F8 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = RxSwiftPlayground.playground; path = Playgrounds/RxSwiftPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465CE011284EB81B003185F8 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 		465CDFF5284EB668003185F8 /* RxSwift-BootCamp */ = {
 			isa = PBXGroup;
 			children = (
+				465CE012284EB8D3003185F8 /* RxSwiftPlayground.playground */,
 				465CDFF6284EB668003185F8 /* AppDelegate.swift */,
 				465CDFF8284EB668003185F8 /* SceneDelegate.swift */,
 				465CDFFA284EB668003185F8 /* ViewController.swift */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = "RxSwift-BootCamp";
+			packageProductDependencies = (
+				465CE010284EB81B003185F8 /* RxSwift */,
+			);
 			productName = "RxSwift-BootCamp";
 			productReference = 465CDFF3284EB668003185F8 /* RxSwift-BootCamp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 465CDFEA284EB668003185F8;
+			packageReferences = (
+				465CE00F284EB81B003185F8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 465CDFF4284EB668003185F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		465CE00F284EB81B003185F8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		465CE010284EB81B003185F8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 465CE00F284EB81B003185F8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 465CDFEB284EB668003185F8 /* Project object */;
 }
